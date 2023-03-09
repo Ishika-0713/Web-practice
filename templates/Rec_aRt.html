@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Recommended Articles</title>
+  <!-- <link rel="icon" type="image/x-icon" href="images/favicon.ico"> -->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+</head>
+<body style="background-color: aquamarine;">
+  <h1>Recommended Articles</h1>
+  {% for article in recommended_articles %}
+    <h2>{{ article.title }}</h2>
+    <p>{{ article.content }}</p>
+  {% endfor %}
+</body>
+</html>
